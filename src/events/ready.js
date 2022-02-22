@@ -14,5 +14,7 @@ module.exports = {
     setInterval(async () => {
       await handleNickUpdate(guild);
     }, nickHandling.delay)
+
+    await guild.commands.set(bot.commands)
   }
 }
