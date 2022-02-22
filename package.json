@@ -1,0 +1,23 @@
+{
+  "name": "skycloud-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markxhewson/skycloud-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markxhewson/skycloud-bot/issues"
+  },
+  "homepage": "https://github.com/markxhewson/skycloud-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "ms": "^2.1.3"
+  }
+}
