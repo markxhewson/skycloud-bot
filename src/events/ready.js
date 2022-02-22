@@ -7,6 +7,8 @@ module.exports = {
   once: true,
 
   run: async (bot) => {
+    console.info("[LOG] Bot started successfully.")
+
     const guild = bot.guilds.cache.get("892102571492245535")
 
     setInterval(async () => {
