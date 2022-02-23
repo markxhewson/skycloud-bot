@@ -9,6 +9,8 @@ const handleNickUpdate = async (guild) => {
     const roles = member.roles.cache.map(r => r.name);
     const role = getHighestRole(roles);
 
+    if (member.id == "946173750666199081") return;
+
     if (Object.keys(ranks).some(rank => member.displayName.includes(rank) && !roles.includes(rank)) && role.length == 0) {
       member.setNickname(member.user.username)
     }

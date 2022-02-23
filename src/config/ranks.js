@@ -1,5 +1,7 @@
 module.exports = {
   "Owner": "[Owner]",
+  "Manager": "[Manager]",
   "Admin": "[Admin]",
-  "Mod": "[Mod]"
+  "Mod": "[Mod]",
+  "Bots": "[Bot]"
 }

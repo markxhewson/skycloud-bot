@@ -9,7 +9,7 @@ module.exports = {
   run: async (bot) => {
     console.info("[LOG] Bot started successfully.")
 
-    const guild = bot.guilds.cache.get("892102571492245535")
+    const guild = bot.guilds.cache.get("923718735217455135")
 
     setInterval(async () => {
       await handleNickUpdate(guild);
