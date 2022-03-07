@@ -19,7 +19,11 @@ module.exports = {
       await bot.db.profile.create({ uuid: profile.uuid, discordID: interaction.member.id })
       
       interaction.member.roles.add(interaction.guild.roles.cache.find(r => r.name.toLowerCase() == "linked")).catch(err => err);
-      return interaction.reply(`You have successfully linked your in-game account (**${profile.displayName}**) to your discord account!`)
+      
+      const index = bot.linking.indexOf(profile)
+      if (index > -1) bot.linking.splice(index, 1)
+
+      return interaction.reply(`You have linked your in-game account (**${profile.displayName}**) to your discord account!`)
     }
   }
 }

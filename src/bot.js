@@ -18,7 +18,7 @@ const redis = require("./database/redis/connection.js");
       file = file.replace("\\", "/").split("/")
       file.shift()
 
-      const event = require(`./${file}`)
+      const event = require(`./${file.join("/")}`)
 
       if (event.once) {
         client.once(event.name, event.run.bind(null, client))
