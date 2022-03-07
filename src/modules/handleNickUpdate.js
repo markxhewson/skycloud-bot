@@ -17,7 +17,7 @@ const handleNickUpdate = async (guild) => {
 
     if (role.length == 0) return;
 
-    return member.setNickname(`${ranks[role]} ${member.user.username}`).catch(err => err);
+    return member.setNickname(`[${ranks[role]}] ${member.user.username}`).catch(err => err);
   })
 }
 
